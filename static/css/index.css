@@ -134,49 +134,4 @@ body {
 }
 
 
-/* 轮播容器（控制整体宽度） */
-.carousel-container {
-  width: 100%; /* 占满父容器宽度 */
-  max-width: 1200px; /* 可选：限制最大宽度（根据设计需求调整） */
-  margin: 0 auto; /* 居中显示 */
-}
-
-/* 轮播项（Bulma默认类名可能为`.item`，这里根据实际调整） */
-.carousel-item {
-  width: 100%; /* 占满轮播容器宽度 */
-  padding: 0 0.5rem; /* 左右内边距，避免视频紧贴边缘 */
-}
-
-/* 视频包装器（关键：控制视频自适应） */
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%; /* 16:9宽高比（可根据视频实际比例调整，如4:3为75%） */
-  border-radius: 8px; /* 可选：圆角美化 */
-  overflow: hidden; /* 防止视频溢出 */
-}
-
-/* 自适应视频核心样式 */
-.adaptive-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* 保持宽高比，完整显示视频（不裁剪） */
-  /* 可选：若需覆盖容器（可能裁剪），改为 object-fit: cover; */
-}
-
-/* 可选：轮播导航按钮样式优化 */
-.carousel .pagination {
-  margin-top: 1rem;
-}
-.carousel .pagination-dot {
-  background: #ddd; /* 未选中状态颜色 */
-}
-.carousel .pagination-dot.is-active {
-  background: #333; /* 选中状态颜色 */
-}
-
 
